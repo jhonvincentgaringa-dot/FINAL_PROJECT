@@ -7,6 +7,17 @@ The purpose of this project is to demonstrate the practical application of dynam
 
 ---
 
+### Variable and Data type
+
+| Variable | Data Type | Description |
+| :--- | :--- | :--- |
+| `studentId` | `int` | A unique integer identifier for the student. |
+| `name[100]` | `char` (Array) | A character array (string) storing the student's name. |
+| `major[50]` | `char` (Array) | A character array (string) storing the student's major. |
+| `*next` | `struct Student*` | A self-referential pointer used to link to the next record in the list. |
+
+---
+
 ## Data Structures and Algorithms
 
 ### Data Structures
@@ -20,18 +31,3 @@ The purpose of this project is to demonstrate the practical application of dynam
 3.  **Node Deletion**: An algorithm that re-links pointers to remove a specific node from the sequence while preventing memory leaks using `free()`.
 
 ---
-
-Variable,Data Type,Scope/Context,Description
-studentId,int,struct Student,A unique integer used to identify each student record.
-name,char[100],struct Student,A character array (string) that stores the student's full name.
-major,char[50],struct Student,A character array (string) that stores the student's academic major.
-*next,struct Student*,struct Student,A self-referential pointer that stores the memory address of the next node in the list.
-*head,struct Student*,main(),"The ""entry point"" pointer that tracks the very first student in the linked list."
-choice,int,main(),Stores the user's numeric input for menu navigation.
-id,int,Local (various),"Temporary storage for IDs entered during addition, searching, or deletion."
-name,char[100],main(),A temporary buffer used to capture user text input before it is copied to the heap.
-major,char[50],main(),A temporary buffer used to capture major input before it is copied to the heap.
-**head,struct Student**,Functions,"A pointer-to-a-pointer, allowing functions to modify the original head in main."
-*current,struct Student*,Traversal,"An iterator pointer used to ""walk"" through the list without losing the start position."
-*prev,struct Student*,deleteStudent,Tracks the node immediately preceding the target to bridge the gap after deletion.
-*newStudent,struct Student*,createStudent,Stores the memory address returned by malloc for a newly allocated record.
