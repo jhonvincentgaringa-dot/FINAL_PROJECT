@@ -20,14 +20,3 @@ The purpose of this project is to demonstrate the practical application of dynam
 3.  **Node Deletion**: An algorithm that re-links pointers to remove a specific node from the sequence while preventing memory leaks using `free()`.
 
 ---
-
-## How to Compile and Run
-
-### Prerequisites
-* A C compiler (such as `gcc`, `clang`, or `MinGW`).
-
-### Compilation
-Open your terminal or command prompt and navigate to the project folder. Run the following command:
-
-```bash
-gcc main.c -o student_system
