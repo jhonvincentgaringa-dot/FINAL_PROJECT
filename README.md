@@ -28,6 +28,5 @@ The purpose of this project is to demonstrate the practical application of dynam
 ### Algorithms
 1.  **Linear Traversal (List Display)**: Iterates through every node in the linked list to print student details to the console.
 2.  **Linear Search**: A search algorithm that traverses the list sequentially to find a student matching a specific ID.
-3.  **Node Deletion**: An algorithm that re-links pointers to remove a specific node from the sequence while preventing memory leaks using `free()`.
 
 ---
