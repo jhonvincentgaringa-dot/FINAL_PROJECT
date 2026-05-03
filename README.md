@@ -1,9 +1,9 @@
 # Student Registration System
 
 ## Overview
-The **Student Registration System** is a command-line application designed to manage student records efficiently. It allows users to register new students, view the entire directory, search for specific individuals by their unique ID, and remove records from the system. 
+The **Student Registration System** is a command-line application designed to manage student records efficiently. It allows users to register new students, view the entire directory, search for specific student by their unique ID, edit the specific student information, and remove records from the system. 
 
-The purpose of this project is to demonstrate the practical application of dynamic memory management and fundamental data structures in the C programming language.
+The purpose of this project is to demonstrate the practical application of dynamic memory management and fundamental data structures and algorithms in the C programming language.
 
 ---
 
