@@ -43,7 +43,7 @@ The following five algorithmic patterns drive the system's functionality:
 
 ---
 
-Features
+# Features
 
 *   **Color-coded Interface**: Uses ANSI escape sequences (RED, GREEN, YELLOW, etc.) for a visually organized terminal experience.
 *   **Comprehensive Student Management**: Supports adding, displaying, finding, editing, and deleting student records.
