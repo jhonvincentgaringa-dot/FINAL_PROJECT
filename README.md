@@ -20,7 +20,7 @@ The purpose of this project is to demonstrate the practical application of dynam
 
 ## Data Structures and Algorithms
 
-# Data Structures Implemented
+Data Structures Implemented
 
 The system utilizes four core data structures to manage information and memory effectively:
 
@@ -31,7 +31,7 @@ The system utilizes four core data structures to manage information and memory e
 
 ---
 
-# Algorithms
+Algorithms
 
 The following five algorithmic patterns drive the system's functionality:
 
@@ -43,7 +43,7 @@ The following five algorithmic patterns drive the system's functionality:
 
 ---
 
-# Features
+Features
 
 *   **Color-coded Interface**: Uses ANSI escape sequences (RED, GREEN, YELLOW, etc.) for a visually organized terminal experience.
 *   **Comprehensive Student Management**: Supports adding, displaying, finding, editing, and deleting student records.
