@@ -37,7 +37,7 @@ int main() {
     
     // DATA STRUCTURE 3: Stack
     // Lines 41-45 Local variables stored on the Stack memory
-    struct Student *head = NULL; // DATA STRUCTURE 4: Pointer
+    struct Student *head = NULL;
     int choice;
     char id[20];
     char name[100];
