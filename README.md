@@ -20,13 +20,31 @@ The purpose of this project is to demonstrate the practical application of dynam
 
 ## Data Structures and Algorithms
 
-### Data Structures
-1.  **Singly Linked List**: The primary container for student records. It allows for dynamic memory allocation, enabling the system to grow as more students are added without needing a predefined size.
-2.  **Arrays**: Used within the `Student` struct to store fixed-length string data for names and majors.
-3.  **Stack**: Utilized for local variable management and function call control within the `main` execution loop.
+# Data Structures Implemented
 
-### Algorithms
-1.  **Linear Traversal (List Display)**: Iterates through every node in the linked list to print student details to the console.
-2.  **Linear Search**: A search algorithm that traverses the list sequentially to find a student matching a specific ID.
+The system utilizes four core data structures to manage information and memory effectively:
+
+1.  **Linked List (Singly Linked List)**: The primary structure used to store student records via `struct Student`. It allows for dynamic memory allocation, enabling the registry to grow or shrink as needed.
+2.  **Array (Character Arrays/Strings)**: Used within each node to store specific student attributes such as `studentId`, `name`, `course`, and `major`.
+3.  **Stack (Local Variable Storage)**: Local variables within the `main` function (like `choice`, `id`, and the `head` pointer) are stored in stack memory for fast, scope-based access.
+4.  **Pointer (Head Reference)**: A critical pointer (`struct Student *head`) is used to maintain the reference to the start of the linked list, allowing the program to traverse the data.
 
 ---
+
+# Algorithms
+
+The following five algorithmic patterns drive the system's functionality:
+
+*   **Validation (Input Checking)**: Functions like `isNumeric()` and `hasNumber()` ensure data integrity by verifying that IDs contain only digits and names contain no numbers before processing.
+*   **Insertion (Append to Tail)**: When adding a new student, the system traverses to the end of the linked list and attaches a new node.
+*   **Linear Traversal (Displaying/Cleaning)**: Used to print the entire list of students and to safely free memory (cleaning) when exiting the program.
+*   **Searching (Linear Search)**: To find or edit a specific record, the system iterates through the list comparing the target ID against each node's `studentId`.
+*   **Deletion (Node Removal)**: This algorithm locates a specific node, unlinks it from the list by updating the previous node's `next` pointer, and frees the memory.
+
+---
+
+# Features
+
+*   **Color-coded Interface**: Uses ANSI escape sequences (RED, GREEN, YELLOW, etc.) for a visually organized terminal experience.
+*   **Comprehensive Student Management**: Supports adding, displaying, finding, editing, and deleting student records.
+*   **Error Handling**: Includes checks for invalid menu choices and failed memory allocations.
