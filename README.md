@@ -20,26 +20,31 @@ The purpose of this project is to demonstrate the practical application of dynam
 
 ## Data Structures and Algorithms
 
-Data Structures Implemented
+**Data Structures Implemented**
 
 The system utilizes four core data structures to manage information and memory effectively:
 
 1.  **Linked List (Singly Linked List)**: The primary structure used to store student records via `struct Student`. It allows for dynamic memory allocation, enabling the registry to grow or shrink as needed.
 2.  **Array (Character Arrays/Strings)**: Used within each node to store specific student attributes such as `studentId`, `name`, `course`, and `major`.
 3.  **Stack (Local Variable Storage)**: Local variables within the `main` function (like `choice`, `id`, and the `head` pointer) are stored in stack memory for fast, scope-based access.
-4.  **Pointer (Head Reference)**: A critical pointer (`struct Student *head`) is used to maintain the reference to the start of the linked list, allowing the program to traverse the data.
 
 ---
 
-Algorithms
+**Algorithms**
 
-The following five algorithmic patterns drive the system's functionality:
+The system implements 11 distinct algorithms to manage the lifecycle of student data[cite: 1]:
 
-*   **Validation (Input Checking)**: Functions like `isNumeric()` and `hasNumber()` ensure data integrity by verifying that IDs contain only digits and names contain no numbers before processing.
-*   **Insertion (Append to Tail)**: When adding a new student, the system traverses to the end of the linked list and attaches a new node.
-*   **Linear Traversal (Displaying/Cleaning)**: Used to print the entire list of students and to safely free memory (cleaning) when exiting the program.
-*   **Searching (Linear Search)**: To find or edit a specific record, the system iterates through the list comparing the target ID against each node's `studentId`.
-*   **Deletion (Node Removal)**: This algorithm locates a specific node, unlinks it from the list by updating the previous node's `next` pointer, and frees the memory.
+1.  **Linked List Memory Deallocation**: A traversal algorithm that visits every node to `free()` heap memory before the program exits.
+2.  **String Traversal & Validation**: Custom functions (`isNumeric` and `hasNumber`) that iterate through character arrays to ensure data integrity.
+3.  **Dynamic Memory Allocation**: The `createStudent` algorithm that initializes new nodes on the heap.
+4.  **Linked List Insertion (Append to Tail)**: An $O(N)$ algorithm that finds the end of the list to attach a new record.
+5.  **Linked List Traversal**: The mechanism used by `displayStudents` to visit and print every node in the sequence.
+6.  **Linear Search (By ID)**: Iterates through the list until the target ID is found or the end is reached ($O(N)$ complexity).
+7.  **Linear Search + Data Mutation**: Used by `editStudent` to locate a specific node and modify its internal strings.
+8.  **Node Deletion**: An algorithm that searches for an ID and carefully unlinks the node by updating the previous node's pointer.
+9.  **Data Swapping**: An in-place mutation algorithm used to exchange data between two nodes during sorting.
+10. **Bubble Sort**: A sorting algorithm that compares adjacent nodes and swaps data if they are out of order based on ID.
+11. **Selection Sort**: A sorting algorithm that finds the alphabetically "smallest" name in the unsorted portion and moves it to the front.
 
 ---
 
@@ -48,3 +53,4 @@ The following five algorithmic patterns drive the system's functionality:
 *   **Color-coded Interface**: Uses ANSI escape sequences (RED, GREEN, YELLOW, etc.) for a visually organized terminal experience.
 *   **Comprehensive Student Management**: Supports adding, displaying, finding, editing, and deleting student records.
 *   **Error Handling**: Includes checks for invalid menu choices and failed memory allocations.
+
