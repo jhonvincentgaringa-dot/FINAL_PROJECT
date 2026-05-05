@@ -1,5 +1,4 @@
 # Student Registration System
-
 ## Overview
 The **Student Registration System** is a command-line application designed to manage student records efficiently. It allows users to register new students, view the entire directory, search for specific student by their unique ID, edit the specific student information, and remove records from the system. 
 
