@@ -32,7 +32,7 @@ The system utilizes four core data structures to manage information and memory e
 
 **Algorithms**
 
-The system implements 11 distinct algorithms to manage the lifecycle of student data[cite: 1]:
+The system implements 11 distinct algorithms to manage the lifecycle of student data:
 
 1.  **Linked List Memory Deallocation**: A traversal algorithm that visits every node to `free()` heap memory before the program exits.
 2.  **String Traversal & Validation**: Custom functions (`isNumeric` and `hasNumber`) that iterate through character arrays to ensure data integrity.
