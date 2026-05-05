@@ -33,8 +33,8 @@ The system utilizes four core data structures to manage information and memory e
 
 The system implements 3 distinct algorithms to manage the lifecycle of student data:
 
-1.  **Linear Search (By ID)**: Iterates through the list until the target ID is found or the end is reached ($O(N)$ complexity).
-2.  **Data Swapping**: An in-place mutation algorithm used to exchange data between two nodes during sorting.
+1.  **Linear Search**: Iterates through the list until the target ID is found or the end is reached ($O(N)$ complexity).
+2. **Selection Sort**: 
 3. **Bubble Sort**: A sorting algorithm that compares adjacent nodes and swaps data if they are out of order based on ID.
 
 ---
