@@ -32,19 +32,11 @@ The system utilizes four core data structures to manage information and memory e
 
 **Algorithms**
 
-The system implements 11 distinct algorithms to manage the lifecycle of student data:
+The system implements 3 distinct algorithms to manage the lifecycle of student data:
 
-1.  **Linked List Memory Deallocation**: A traversal algorithm that visits every node to `free()` heap memory before the program exits.
-2.  **String Traversal & Validation**: Custom functions (`isNumeric` and `hasNumber`) that iterate through character arrays to ensure data integrity.
-3.  **Dynamic Memory Allocation**: The `createStudent` algorithm that initializes new nodes on the heap.
-4.  **Linked List Insertion (Append to Tail)**: An $O(N)$ algorithm that finds the end of the list to attach a new record.
-5.  **Linked List Traversal**: The mechanism used by `displayStudents` to visit and print every node in the sequence.
-6.  **Linear Search (By ID)**: Iterates through the list until the target ID is found or the end is reached ($O(N)$ complexity).
-7.  **Linear Search + Data Mutation**: Used by `editStudent` to locate a specific node and modify its internal strings.
-8.  **Node Deletion**: An algorithm that searches for an ID and carefully unlinks the node by updating the previous node's pointer.
-9.  **Data Swapping**: An in-place mutation algorithm used to exchange data between two nodes during sorting.
-10. **Bubble Sort**: A sorting algorithm that compares adjacent nodes and swaps data if they are out of order based on ID.
-11. **Selection Sort**: A sorting algorithm that finds the alphabetically "smallest" name in the unsorted portion and moves it to the front.
+1.  **Linear Search (By ID)**: Iterates through the list until the target ID is found or the end is reached ($O(N)$ complexity).
+2.  **Data Swapping**: An in-place mutation algorithm used to exchange data between two nodes during sorting.
+3. **Bubble Sort**: A sorting algorithm that compares adjacent nodes and swaps data if they are out of order based on ID.
 
 ---
 
