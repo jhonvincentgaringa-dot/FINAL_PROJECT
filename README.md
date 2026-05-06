@@ -33,14 +33,14 @@ The system utilizes 3 core data structures to manage information and memory effe
 
 The system implements 3 distinct algorithms to manage the lifecycle of student data:
 
-1.  **Linear Search**: Iterates through the list until the target ID is found or the end is reached ($O(N)$ complexity). 
+1. **Linear Search**: Iterates through the list until the target ID is found or the end is reached ($O(N)$ complexity). 
 2. **Bubble Sort**: A sorting algorithm that compares adjacent nodes and swaps data if they are out of order based on ID.
-3. **Selection Sort**: The list alphabetically by name by repeatedly finding the minimum element in the unsorted portion and moving it to the front
+3. **Selection Sort**: The list alphabetically by name by repeatedly finding the minimum element in the unsorted portion and moving it to the front.
 
 ---
 
 # Features
 
 *   **Color-coded Interface**: Uses ANSI escape sequences (RED, GREEN, YELLOW, etc.) for a visually organized terminal experience.
-*   **Comprehensive Student Management**: Supports adding, displaying, finding, editing, and deleting student records.
+*   **Comprehensive Student Management**: Supports adding, displaying, finding, editing, sorting by id, sorting by name, deleting student records, and undo delete student.
 *   **Error Handling**: Includes checks for invalid menu choices and failed memory allocations.
