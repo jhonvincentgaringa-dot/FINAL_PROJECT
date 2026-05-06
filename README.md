@@ -26,7 +26,7 @@ The system utilizes 3 core data structures to manage information and memory effe
 
 1.  **Linked List (Singly Linked List)**: The primary structure used to store student records via `struct Student`. It allows for dynamic memory allocation, enabling the registry to grow or shrink as needed.
 2.  **Array (Character Arrays/Strings)**: Used within each node to store specific student attributes such as `studentId`, `name`, `course`, and `major`.
-3.  **Stack (Linked List Implementation)**: It is primarily designed to support the 'Undo Delete' feature which temporarily hold deleted students. It allows the student data to be pushed back into the main list if the user made a mistake.
+3.  **Stack (Linked List Implementation)**: It is primarily designed to support the 'Undo Delete' feature which temporarily hold deleted students. It allows the student data to be restored into the main list if the user made a mistake.
    
 ---
 
